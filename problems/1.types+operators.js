@@ -7,20 +7,32 @@ function isNumber(val) {
   return (ifNumber || false)
 }
 
+// Another way to do this:
+// if (typeof val === "number") {
+//   return true
+// }
+// else {
+//   return false
+// }
+
+// another way
+// return typeof val == "number"
+
+
 /** Takes in a value and returns whether it is truthy
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
 function isTruthy(val) {
-  let ifTruthy = (val) === true || false
-  if (ifTruthy === true){
-      return ("Truthy")
+  if (val){
+    return true
+  } else {
+    return false
   }
-else {
-  return "Falsey"
-}
 }
 
+//constructor value option
+//return Boolean(value)
 
 module.exports = {
   isNumber,

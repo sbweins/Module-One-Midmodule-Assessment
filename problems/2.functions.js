@@ -24,6 +24,13 @@ function incrementGlobalCount(val) {
   globalCount = (val + global.globalCount)
 }
 
+//another way to do this:
+//function incrementGlobalCount(val) {
+//  global.globalCount += val
+//}
+
+
+
 /** Multiplies three numbers
 * @param {number} firstNum - The first number
 * @param {number} secondNum - The second number
