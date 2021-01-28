@@ -3,20 +3,15 @@
 * @returns {boolean} - Is val a number
 */
 function isNumber(val) {
-  let ifNumber = typeof (val) === "number" || false
-  return (ifNumber || false)
+  return typeof val == "number"
 }
 
-// Another way to do this:
-// if (typeof val === "number") {
-//   return true
+//  if (typeof (val) === "number"){
+//    return true
+//  } else {
+//    return false
+//  }
 // }
-// else {
-//   return false
-// }
-
-// another way
-// return typeof val == "number"
 
 
 /** Takes in a value and returns whether it is truthy

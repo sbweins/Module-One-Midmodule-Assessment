@@ -21,13 +21,11 @@ function greeting(name) {
 * @modifies {global.globalCount}
 */
 function incrementGlobalCount(val) {
-  globalCount = (val + global.globalCount)
+  global.globalCount += val
 }
 
-//another way to do this:
-//function incrementGlobalCount(val) {
-//  global.globalCount += val
-//}
+//   globalCount = (val + global.globalCount)
+// }
 
 
 
